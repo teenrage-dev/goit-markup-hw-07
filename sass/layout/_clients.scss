@@ -7,13 +7,13 @@
     margin-top: -30px;
 }
 
-.clients-item{
+.clients-list__item{
     width: calc(100% / 6 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
 
-.clients-item-link{
+.clients-list__link{
     height: 92px;
     display: flex;
     justify-content: center;
@@ -31,6 +31,6 @@
     }
 }
 
-.clients-icon{
+.clients-list__icon{
     fill: currentColor;
 }

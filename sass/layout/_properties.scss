@@ -1,4 +1,3 @@
-
 .properties-list{
     text-align: left;
     display: flex;
@@ -7,13 +6,13 @@
     margin-top: -30px;
 }
 
-.properties-item{
+.properties-list__item{
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
 
-.properties-item-container{
+.properties-list__container{
     display: flex;
     justify-content: center;
     padding-top: 25px;
@@ -23,7 +22,7 @@
     border-radius: 4px;
 }
 
-.properties-item-title{
+.properties-list__title{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.14;
@@ -32,7 +31,7 @@
     color: var(--first-text-color);
 }
 
-.properties-item-text{
+.properties-list__text{
     text-align: left;
     font-family: "Roboto", sans-serif;
 }

@@ -25,7 +25,7 @@
     padding: 40px;
 }
 
-.modal-close {
+.modal__close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -39,10 +39,10 @@
     background-color: transparent;
 }
 
-.exit-btn-icon {
+.modal__exit-btn-icon {
     transition: fill var(--transition);
-    .modal-close:hover &,
-    .modal-close:focus & {
+    .modal__close:hover &,
+    .modal__close:focus & {
     fill: var(--accent-text-color);
     }
 }
@@ -53,7 +53,7 @@
     visibility: hidden;
 }
 
-.modal-title {
+.modal__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -63,7 +63,7 @@
     margin-bottom: 12px;
 }
 
-.input-text {
+.modal-form__input-text {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 1.14;
@@ -72,7 +72,7 @@
     display: block;
 }
 
-.form-field {
+.modal-form__form-field {
     margin-bottom: 10px;
 }
 
@@ -80,18 +80,18 @@
     position: relative;
 }
 
-.input-icon {
+.input-wrap__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    .form-input:hover + &,
-    .form-input:focus + & {
+    .input-wrap__input:hover + &,
+    .input-wrap__input:focus + & {
         fill: var(--accent-text-color);
     }
 }
 
-.form-input {
+.input-wrap__input {
     width: 100%;
     height: 40px;
     border: 1px solid var(--fourth-border-color);
@@ -112,7 +112,7 @@
 }
 
 
-.form-text {
+.modal-form__text {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -129,7 +129,7 @@
 
 
 
-.input-checkbox:checked + .input-chekbox-text .input-checkbox-wraper {
+.modal-form__input-checkbox:checked + .modal-form__chekbox-text .input-checkbox-wraper {
     border: none;
     background-color: var(--accent-text-color);
 }
@@ -138,11 +138,11 @@
     fill: transparent;
 }
 
-.input-checkbox:checked + .input-chekbox-text .check-icon {
+.modal-form__input-checkbox:checked + .modal-form__chekbox-text .check-icon {
     fill: var(--third-text-color);
 }
 
-.input-chekbox-text {
+.modal-form__chekbox-text {
     position: relative;
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -162,20 +162,20 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    .input-checkbox:focus + .input-chekbox-text &,
-    .input-checkbox:hover + .input-chekbox-text & {
+    .modal-form__input-checkbox:focus + .modal-form__chekbox-text &,
+    .modal-form__input-checkbox:hover + .modal-form__chekbox-text & {
         border: 2px solid var(--accent-text-color);
     }
 }
 
 
 
-.checkbox-link {
+.modal-form__checkbox-link {
     color: var(--accent-text-color);
     margin-left: 4px;
 }
 
-.modal-form .hero-button {
+.modal-form .hero__button {
     display: block;
     margin: 0 auto;
 }
