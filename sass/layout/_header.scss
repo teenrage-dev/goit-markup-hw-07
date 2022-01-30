@@ -2,9 +2,7 @@ header{
     border-bottom: 1px solid var(--second-border-color);
 }
 
-
-
-.header-container .logo{
+.header__container .logo{
     margin-right: 93px;
 }
 
@@ -12,7 +10,7 @@ header{
     color:var(--second-text-color);
 }
 
-.header-container{
+.header__container{
     display: flex;
     align-items: center;
 }
