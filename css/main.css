@@ -52,6 +52,7 @@ body {
   --fifth-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                         0px 1px 1px rgba(0, 0, 0, 0.14), 
                         0px 2px 1px rgba(0, 0, 0, 0.2);
+  --card-item: 3;
 }
 
 .visually-hidden {
@@ -330,6 +331,19 @@ img {
   color: var(--first-text-color);
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card-set-item {
+  width: calc(100% / var(--card-item) - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 header {
   border-bottom: 1px solid var(--second-border-color);
 }
@@ -453,16 +467,7 @@ header {
 
 .properties-list {
   text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.properties-list__item {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  --card-item: 4;
 }
 
 .properties-list__container {
@@ -493,19 +498,6 @@ header {
   padding-top: 0;
 }
 
-.doing-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.doing-list__item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
 .doing-list__wrap {
   position: relative;
 }
@@ -528,20 +520,11 @@ header {
 
 .team {
   background-color: var(--first-background);
-}
-
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  --card-item: 4;
 }
 
 .team-list__item {
   background-color: var(--third-text-color);
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
   box-shadow: var(--first-box-shadow);
   border-radius: 0px 0px 4px 4px;
 }
@@ -581,17 +564,8 @@ header {
 }
 
 .clients-list {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.clients-list__item {
-  width: calc(100% / 6 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  --card-item: 6;
 }
 
 .clients-list__link {
@@ -736,7 +710,7 @@ address {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .filter-list__buttons {
@@ -768,22 +742,12 @@ address {
   margin-right: 8px;
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .portfolio-list__container {
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--first-border-color);
 }
 
 .portfolio-list__item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
   transition: transform 250ms;
 }
 
